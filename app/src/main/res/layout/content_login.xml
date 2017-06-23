@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lavazza.Login"
+    tools:showIn="@layout/activity_login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingTop="60dp"
+            android:weightSum="1">
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="LAV"-->
+            <!--android:textSize="35sp"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="A"-->
+            <!--android:textSize="55sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="35sp"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:text="ZZA"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="TORINO,"-->
+
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" ITALIA,"-->
+
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorPrimary"-->
+
+            <!--android:textStyle="bold"-->
+            <!--android:text=" 1895"/>-->
+            <!--</LinearLayout>-->
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lavazza_logo2" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"
+                android:layout_weight="0.44">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+                    <!--<ImageView-->
+                    <!--android:layout_weight="11"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:background="@drawable/image_back"-->
+                    <!--android:src="@drawable/ic_action_user"-->
+
+                    <!--/>-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FFF"
+                        app:theme="@style/MyStyle">
+                        <!--app:hintTextAppearance="@style/TextAppearance.AppCompat"-->
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_action_user"
+                            android:drawablePadding="10dp"
+                            android:gravity="left"
+                            android:hint="UserName"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:text=""
+                            android:textColor="#FFF"
+                            android:textColorHint="#FFF" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--<EditText-->
+                    <!--android:id="@+id/name"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:hint="User"-->
+                    <!--android:gravity="left"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="text"-->
+                    <!--android:background="@drawable/image_back"-->
+                    <!--android:layout_weight="89"-->
+                    <!--android:textColor="#FFF"-->
+                    <!--android:textColorHint="#FFF"-->
+                    <!--android:textCursorDrawable="@drawable/color_cursor"-->
+                    <!--android:drawablePadding="10dp"-->
+                    <!--android:text=""-->
+                    <!--/>-->
+                    <!--android:drawableLeft="@android:drawable/stat_sys_phone_call"-->
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <!--<ImageView-->
+                    <!--android:layout_weight="11"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:background="@drawable/image_back"-->
+                    <!--android:src="@android:drawable/ic_lock_idle_lock"-->
+                    <!--android:id="@+id/imageView2" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FFF"
+                        app:theme="@style/MyStyle">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_action_pass"
+                            android:drawablePadding="10dp"
+                            android:gravity="left"
+                            android:hint="Password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:text=""
+                            android:textColor="#FFF"
+                            android:textColorHint="#FFF" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/password"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:hint="Password"-->
+                    <!--android:gravity="left"-->
+                    <!--android:textColor="#FFF"-->
+                    <!--android:imeOptions="actionDone"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:background="@drawable/image_back"-->
+                    <!--android:layout_weight="89"-->
+                    <!--android:textCursorDrawable="@drawable/color_cursor"-->
+                    <!--android:textColorHint="#FFF"-->
+                    <!--android:drawablePadding="10dp"-->
+                    <!--android:text=""-->
+                    <!--/>-->
+                    <!--android:drawableLeft="@android:drawable/ic_lock_idle_lock"-->
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="100">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/forgot"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_weight="50"-->
+                        <!--android:text="Forgot Password"-->
+                        <!--android:textColor="#FFF"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:textStyle="bold" />-->
+
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="220dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_back_white"
+                        android:text="Login"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Forgot Username/Password ?"
+                    android:textColor="#FFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    </ScrollView>
+    <!--<com.rey.material.widget.ProgressView-->
+        <!--android:id="@+id/loading_spinner"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:pv_autostart="true"-->
+        <!--app:pv_circular="true"-->
+        <!--app:pv_progressMode="indeterminate"-->
+        <!--app:pv_progressStyle="@style/Material.Drawable.CircularProgress"-->
+        <!--android:visibility="invisible"/>-->
+</RelativeLayout>

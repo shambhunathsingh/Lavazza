@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--app:showAsAction="never" />-->
+
+    <item android:id="@+id/action_delete"
+        android:title="Delete All"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_delete2"
+        app:showAsAction="ifRoom" />
+    <!--<item-->
+    <!--android:title="Cart"-->
+    <!--android:id="@+id/badge"-->
+    <!--android:actionLayout="@layout/feed_update_count"-->
+    <!--android:icon="@drawable/shape_notification"-->
+    <!--app:showAsAction="ifRoom">-->
+    <!--</item>-->
+
+</menu>

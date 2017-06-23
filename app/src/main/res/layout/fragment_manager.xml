@@ -1,0 +1,509 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lavazza.ManagerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical">
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="LAV"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="A"-->
+            <!--android:textSize="45sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:text="ZZA"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="TORINO,"-->
+
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" ITALIA,"-->
+
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorPrimary"-->
+
+            <!--android:textStyle="bold"-->
+            <!--android:text=" 1895"/>-->
+            <!--</LinearLayout>-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/lavazza_logo"-->
+                <!--android:layout_marginTop="3dp"/>-->
+
+            <GridView
+                android:id="@+id/grid"
+
+                android:paddingTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:scrollbars="none"
+                android:background="@color/colorPrimary"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" />
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:columnWidth="120dp"-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="160dp"-->
+                <!--android:layout_marginTop="15dp">-->
+
+                <!--<android.support.v4.view.ViewPager-->
+                    <!--android:id="@+id/pager_introduction"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fitsSystemWindows="true"-->
+                    <!--tools:listitem="@layout/pager_item"-->
+
+                    <!--/>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/viewPagerIndicator"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/viewPagerCountDots"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="horizontal" />-->
+
+                <!--</RelativeLayout>-->
+
+            <!--</RelativeLayout>-->
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:weightSum="100"-->
+                <!--android:layout_marginTop="5dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/image1"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_weight="50"/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/image2"-->
+                    <!--android:layout_weight="50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_marginStart="3dp"-->
+                    <!--android:layout_marginLeft="5dp"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="100"-->
+                <!--android:layout_marginTop="5dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/coffee1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_weight="50">-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="150dp"-->
+                        <!--android:src="@drawable/coffee1"-->
+                        <!--android:scaleType="fitXY"-->
+
+                        <!--/>-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_marginRight="15dp">-->
+
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:id="@+id/view1"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_below="@+id/view1"-->
+                        <!--android:id="@+id/txt1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:text="The Coffee Made By You"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:gravity="center"-->
+                        <!--/>-->
+                        <!--<View-->
+                            <!--android:layout_below="@+id/txt1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:id="@+id/view2"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/coffee2"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_weight="50">-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="150dp"-->
+                        <!--android:src="@drawable/coffee2"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_marginRight="15dp">-->
+
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:id="@+id/view3"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_below="@+id/view3"-->
+                            <!--android:id="@+id/txt2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="For Espresso Professional"-->
+                            <!--android:textColor="@color/colorPrimary"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--/>-->
+                        <!--<View-->
+                            <!--android:layout_below="@+id/txt2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--/>-->
+                    <!--</RelativeLayout>-->
+
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="100">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/coffee3"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_weight="50">-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="150dp"-->
+                        <!--android:src="@drawable/coffee3"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_marginRight="15dp">-->
+
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:id="@+id/view4"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_below="@+id/view4"-->
+                            <!--android:id="@+id/txt3"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:text="Your Coffee Break"-->
+                            <!--android:textColor="@color/colorPrimary"-->
+                            <!--android:gravity="center"-->
+                            <!--/>-->
+                        <!--<View-->
+                            <!--android:layout_below="@+id/txt3"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:layout_marginTop="2dp" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="Your Coffee Break"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="16sp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                        <!--&lt;!&ndash;/>&ndash;&gt;-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/coffee4"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_weight="50">-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="150dp"-->
+                        <!--android:src="@drawable/coffeee4"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--/>-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_marginRight="15dp">-->
+
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:id="@+id/view5"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_below="@+id/view5"-->
+                            <!--android:id="@+id/txt4"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:text="Great Coffee &amp; More"-->
+                            <!--android:textColor="@color/colorPrimary"-->
+                            <!--android:gravity="center"-->
+                            <!--/>-->
+                        <!--<View-->
+                            <!--android:layout_below="@+id/txt4"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#FFF"-->
+                            <!--android:layout_marginTop="2dp" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="Great Coffee &amp; More"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="16sp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                        <!--&lt;!&ndash;/>&ndash;&gt;-->
+                <!--</RelativeLayout>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/portal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:src="@drawable/help"-->
+                <!--/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/coffee1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:src="@drawable/coffee1"
+                        android:scaleType="fitXY"
+                        />
+                    <!--android:src="@drawable/prod1"-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Coffee Made By You"
+                        android:textColor="#000"
+
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/coffee2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:src="@drawable/coffeee4"
+                        android:scaleType="fitXY"
+                        />
+                    <!--android:src="@drawable/prod4"-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Great Coffee &amp; More"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+                    <!--android:src="@drawable/prod4"-->
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/coffee3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:src="@drawable/coffee3"
+                        android:scaleType="fitXY"
+                        />
+                    <!--android:src="@drawable/prod3"-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your Coffee Break"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+
+                        android:gravity="center"
+                        />
+                    <!--android:textSize="16sp"-->
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/coffee4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:src="@drawable/coffee2"
+                        android:scaleType="fitXY"
+                        />
+
+                    <!--android:src="@drawable/prod2"-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For Espresso Professional"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+
+                    <!--android:textSize="16sp"-->
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+        <!--</LinearLayout>-->
+
+    </ScrollView>
+
+</FrameLayout>

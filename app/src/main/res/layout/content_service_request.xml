@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_service_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lavazza.ServiceRequest"
+    tools:showIn="@layout/activity_service_request">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/dropshadow"
+        />
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="40dp"-->
+    <!--android:paddingRight="40dp"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+       >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary">
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+              >
+                <!--android:textColorHint="#3f51b5"-->
+
+                <EditText
+                    android:id="@+id/serialno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Machine Serial No."
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    >
+                    <!--android:textColorHint="#3f51b5"-->
+                    <EditText
+                        android:id="@+id/e_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Error Code"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/e_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Error Message"
+                        android:imeOptions="actionNext"
+                        android:inputType="textAutoComplete"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Remark"
+                        android:imeOptions="actionNext"
+                        android:inputType="textMultiLine"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:background="?attr/colorPrimary"/>
+
+            </LinearLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--/////////////old layout/////////-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/relative1">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/image_back"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@drawable/image_back_white"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:hint="Location"-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:textColorHint="@color/colorPrimary"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/relative2"-->
+        <!--android:layout_below="@+id/relative1"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/image_back"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@drawable/image_back_white"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:hint="Machine Serial No."-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:textColorHint="@color/colorPrimary"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/relative3"-->
+        <!--android:layout_below="@+id/relative2"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/image_back"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@drawable/image_back_white"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:hint="Error Code"-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:textColorHint="@color/colorPrimary"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/relative4"-->
+        <!--android:layout_below="@+id/relative3"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/image_back"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@drawable/image_back_white"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:hint="Error Message"-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:textColorHint="@color/colorPrimary"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/relative5"-->
+        <!--android:layout_below="@+id/relative4"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:background="@drawable/image_back"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="145dp"-->
+            <!--android:background="@drawable/image_back_white"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:hint="Remarks"-->
+            <!--android:gravity="start"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:textColorHint="@color/colorPrimary"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/relative5"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:gravity="center">-->
+
+
+       <!--<ImageView-->
+           <!--android:id="@+id/submit1"-->
+           <!--android:layout_width="60dp"-->
+           <!--android:layout_height="60dp"-->
+           <!--android:src="@drawable/ic_action_send2"-->
+           <!--android:background="@drawable/ovalshape"-->
+           <!--/></RelativeLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--/////////////old layout/////////-->
+
+    </ScrollView>
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/loading_spinner"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

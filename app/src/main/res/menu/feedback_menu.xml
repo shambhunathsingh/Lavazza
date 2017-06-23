@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--app:showAsAction="never" />-->
+
+    <!--<item android:id="@+id/action_cart"-->
+    <!--android:title="Cart"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:icon="@drawable/ic_action_cart1"-->
+    <!--app:showAsAction="ifRoom" />-->
+
+    <item android:id="@+id/user"
+        android:title="Customer Portal"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_user_blue"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_cart"
+        android:title="Cart"
+        android:orderInCategory="100"
+        app:actionLayout="@layout/badge_main"
+        android:icon="@drawable/ic_action_cart1"
+        app:showAsAction="ifRoom" />
+
+    <!--<item-->
+    <!--android:id="@+id/action_cart"-->
+    <!--app:actionLayout="@layout/menu_action_item_badge"-->
+    <!--app:showAsAction="always"-->
+    <!--android:title="Cart"/>-->
+
+
+    <!--<item-->
+    <!--android:title="Cart"-->
+    <!--android:id="@+id/badge"-->
+    <!--android:actionLayout="@layout/feed_update_count"-->
+    <!--android:icon="@drawable/shape_notification"-->
+    <!--app:showAsAction="ifRoom">-->
+    <!--</item>-->
+
+</menu>

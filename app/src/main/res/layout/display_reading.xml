@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+
+            <TextView
+                android:id="@+id/serial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Serial No."
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Mail ID"-->
+            <!--android:textSize="15sp"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_weight="25"-->
+            <!--/>-->
+            <!--<View-->
+            <!--android:layout_width="0.2dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="#bcdaf2" />-->
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Vehicle Num"-->
+            <!--android:textColor="#fff"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_weight="25"-->
+            <!--/>-->
+            <!--<View-->
+            <!--android:layout_width="0.2dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="#bcdaf2" />-->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#333" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="horizontal"
+
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+
+            <TextView
+                android:id="@+id/opening"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:gravity="center"
+                android:text="Opening"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+
+            <TextView
+                android:id="@+id/closing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="Closing"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+
+            <TextView
+                android:id="@+id/consumption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:gravity="center"
+                android:text="Consumption"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="fill_parent"
+                android:background="#333" />
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Comment"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_weight="25"-->
+            <!--android:textColor="#fff"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+            <!--<View-->
+            <!--android:layout_width="0.2dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="#bcdaf2" />-->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#333" />
+    </LinearLayout>
+</LinearLayout>

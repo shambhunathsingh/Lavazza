@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_live_sale"
+            android:icon="@drawable/ic_action_livesale"
+            android:title="LIVE SALES" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_action_customer1"
+            android:title="MY ACCOUNT" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_action_order"
+            android:title="MY ORDER" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_action_order"
+            android:title="PRODUCTS" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/ic_action_service1"
+            android:title="SERVICES" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_action_customer1"
+            android:title="FEEDBACK" />
+        <item
+            android:id="@+id/nav_data"
+            android:icon="@drawable/ic_action_data1"
+            android:title="DATA SCIENCE" />
+        <!--<item
+            android:id="@+id/nav_mycart"
+            android:icon="@drawable/ic_action_cart_page"
+            android:title="MY CART" />-->
+
+        <item
+            android:id="@+id/nav_knowledge"
+            android:icon="@drawable/ic_action_customer1"
+            android:title="KNOWLEDGE BASE" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_action_support"
+            android:title="HELP &amp; SUPPORT" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="LOGOUT" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

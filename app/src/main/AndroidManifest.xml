@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lavazza">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- <uses-permission android:name="android.permission.VIBRATE"/> -->
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/lavazza_app_icon2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Product"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProductRequest"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_product_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ServiceRequest"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_service_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeedBack"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_feed_back"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ForgotPassword"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cart"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_cart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lavazza"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_lavazza"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LiveSales"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_live_sales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SalesInput"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_sales_input"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DataMain"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_data_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SalesInput1"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_sales_input1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LiveSalesSE"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_live_sales_se"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerPortal"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_customer_portal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivityCustomer"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main_customer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ServiceRequestSent"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_service_request_sent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Preview"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_preview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SalesInput1New"
+            android:label="@string/title_activity_sales_input1_new"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Graph"
+            android:label="@string/title_activity_graph"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

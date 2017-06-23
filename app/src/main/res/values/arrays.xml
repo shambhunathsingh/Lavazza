@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="uom" >
+        <item>250gm</item>
+        <item>500gm</item>
+        <item>750gm</item>
+        <item>1000gm</item>
+        <!--<item>Orange</item>-->
+        <!--<item>Cherry</item>-->
+    </string-array>
+</resources>
